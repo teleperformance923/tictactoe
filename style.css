@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  #player-setup {
+    margin: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .cell.taken {
+    pointer-events: none; /* Disable clicking after taken */
+  }
+  
+  #game-message {
+    margin-top: 20px;
+    color: darkgreen;
+  }
+  
